@@ -1,49 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BaseTech — IT Agency</title>
+  <title>BaseTech — IT Solutions</title>
   <style>
-    body { margin:0; font-family:Roboto, Arial; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    /* Hero */
     .hero {
-      padding:80px 20px; background:#1976d2; color:white; text-align:center;
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
     }
-    .container { max-width:900px; margin:auto; padding:40px 20px; }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      animation: fadeIn 1.3s ease-out;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      background: #ffcc00;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffe066;
+      transform: translateY(-3px);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
     .service-box {
-      padding:20px; border:1px solid #ccc; border-radius:10px; margin-bottom:20px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      border: 1px solid #e5e5e5;
     }
-    footer { background:#1976d2; color:white; text-align:center; padding:20px; }
+
+    .service-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-box h3 {
+      margin-top: 0;
+      color: #1976d2;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
   </style>
 </head>
 <body>
 
-<div class="hero">
-  <h1>BaseTech</h1>
-  <p>Your Trusted IT Partner</p>
-</div>
-
-<div class="container">
-  <h2>Layanan</h2>
-
-  <div class="service-box">
-    <h3>Pembuatan Website</h3>
-    <p>Website cepat, modern, dan responsif untuk bisnis Anda.</p>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>BaseTech</h1>
+    <p>Solusi IT Profesional untuk Bisnismu — Modern, Cepat, dan Terpercaya.</p>
+    <a class="btn" href="https://wa.me/6280000000000" target="_blank">Hubungi via WhatsApp</a>
   </div>
 
-  <div class="service-box">
-    <h3>Konsultasi IT</h3>
-    <p>Solusi strategis untuk meningkatkan efisiensi dan keamanan sistem Anda.</p>
+  <!-- SERVICES -->
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom: 10px;">Layanan Kami</h2>
+    <p style="text-align:center; margin-bottom: 40px; opacity: 0.8;">
+      Kami membantu bisnis berkembang dengan layanan teknologi terbaik.
+    </p>
+
+    <div class="services">
+      <div class="service-box">
+        <h3>Pembuatan Website</h3>
+        <p>Website modern, cepat, responsif, dan dikembangkan sesuai kebutuhan bisnis Anda.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Mobile App Development</h3>
+        <p>Aplikasi Android/iOS dengan performa tinggi dan pengalaman pengguna terbaik.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>IT Maintenance & Support</h3>
+        <p>Pemeliharaan sistem, troubleshooting, dan dukungan teknis untuk perusahaan.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Cloud & Infrastructure</h3>
+        <p>Penerapan cloud, server, dan keamanan jaringan untuk efisiensi optimal.</p>
+      </div>
+    </div>
   </div>
 
-  <h2>Hubungi Kami</h2>
-  <p>Email: basetech@example.com</p>
-  <p>WhatsApp: 08xx-xxxx-xxxx</p>
-</div>
-
-<footer>
-  © 2025 BaseTech
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 BaseTech — Professional IT Solutions
+  </footer>
 
 </body>
 </html>
